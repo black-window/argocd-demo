@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: nginx-html
+data:
+  index.html: |
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <title>Kubernetes Demo</title>
+      </head>
+      <body>
+        <h1>Hallo aus Kubernetes!</h1>
+        <p>Diese HTML-Datei kommt aus einer ConfigMap.</p>
+      </body>
+    </html>
